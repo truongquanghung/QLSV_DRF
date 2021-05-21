@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            font-size: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form align="center" method="post">{% csrf_token %}
+        <p>Bạn có chắc chắn muốn xóa sinh viên {{ object }}?</p>
+        <input type="submit" value="Confirm">
+        <a href="/"><button> Trở về</button></a>
+    </form>
+</body>

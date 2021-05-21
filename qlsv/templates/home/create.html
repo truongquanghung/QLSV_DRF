@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body {
+            font-size: 20px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Thêm">
+    </form>
+</body>
