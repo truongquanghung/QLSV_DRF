@@ -5,11 +5,15 @@
             font-size: 20px;
             margin: auto;
         }
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <form method="post">{% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Thêm">
+        <button><a href="/">Trở về</a></button>
     </form>
 </body>

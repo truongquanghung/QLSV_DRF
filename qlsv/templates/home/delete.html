@@ -5,12 +5,17 @@
             font-size: 20px;
             margin: auto;
         }
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <form align="center" method="post">{% csrf_token %}
         <p>Bạn có chắc chắn muốn xóa sinh viên {{ object }}?</p>
         <input type="submit" value="Confirm">
-        <a href="/"><button> Trở về</button></a>
+    </form>
+    <form align="center">
+        <button><a href="/">Trở về</a></button>
     </form>
 </body>
