@@ -24,5 +24,5 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
         token = super(MyTokenObtainPairSerializer, cls).get_token(user)
 
         # Add custom claims
-        # token['user_id'] = user.id
+        token['time'] = str(token.current_time)
         return token
